@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    background-color: none;
+   
+}
+
+h1{
+    background-color: purple;
+    color: wheat;
+    height: 5rem;
+    min-height: 5rem;
+    line-height: 5rem;
+
+}
+.choices{
+    border: 1px solid none;
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+    width: 100%;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.choice{
+    border: 1px solid none;
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice:hover{
+    /* opacity: 0.5; */
+    cursor: pointer;
+    background-color: black;
+}
+img{
+    border: 1px solid none;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+    font-size: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#user-score,#comp-score{
+    font-size: 4rem;
+}
+
+.msg-container{
+    margin-top: 4rem;
+}
+#msg{
+    background-color: rgb(0, 0, 0);
+    font-size: 2rem;
+    color: white;
+    display: inline;
+    padding: 11px;
+    border-radius: 15px;
+}
+
+
+/* this is dark/light mode css */
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
+#mode{
+    float: right;
+    margin: 25px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 35px;
+    border: 2px solid white;
+    background-color: wheat;
+    color: black;
+}
+
