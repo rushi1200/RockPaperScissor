@@ -8,11 +8,11 @@
 }
 
 h1{
-    background-color: purple;
+    background : linear-gradient(45deg,#7f00ff,pink);;
     color: wheat;
     height: 5rem;
     min-height: 5rem;
-    line-height: 5rem;
+    line-height: 5rem; 
 
 }
 .choices{
@@ -25,7 +25,7 @@ h1{
     margin-top: 5rem;
 }
 .choice{
-    border: 1px solid none;
+    border: 1px solid white;
     height: 165px;
     width: 165px;
     border-radius: 50%;
@@ -37,12 +37,14 @@ h1{
     /* opacity: 0.5; */
     cursor: pointer;
     background-color: black;
+    border:4px solid white;
+
 }
 img{
     border: 1px solid none;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -94,3 +96,27 @@ img{
     color: black;
 }
 
+@media (max-width:700px) {
+    .choices{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: none;
+    }
+    .choice{
+        background-color: blueviolet;
+        width: 100px;
+        height: 100%;
+        padding: 1rem;
+
+    }
+    .score{
+        font-size: 15px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    #msg{
+        font-size: 20px;
+    }
+}
